@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Оформление переоборудования автомобилей | Тест-драйв</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/animate.min.css" />
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-left">
+        <a href="#" class="logo">
+          <div class="logo-top">Лаборатория</div>
+          <div class="logo-bottom">ТЕСТ-ДРАЙВ</div>
+        </a>
+
+        <div class="select-city">
+          <span class="select-city-text">Вологда</span>
+          <img src="img/arrow.svg" alt="V" class="select-arrow" />
+        </div>
+        <div
+          class="select-city-block wow animate__animated animate__fadeIn"
+          data-wow-delay="1.5s"
+        >
+          <div class="select-city-block-row">
+            <span class="select-city-block-text"
+              >Ваш город -
+              <span class="select-city-block-city">Вологда?</span></span
+            >
+          </div>
+
+          <div class="select-city-block-buttons">
+            <div class="select-city-block-button-yes">Да</div>
+            <div class="select-city-block-button-no">Нет, другой</div>
+          </div>
+        </div>
+      </div>
+      <div class="header-right">
+        <span class="header-address">Зосимовская 9, офис 3</span>
+        <a href="tel:+78172550182" class="header-phone">8 (8172) 55 01 82</a>
+        <a href="https://wa.me/+79215380784">
+          <img src="img/wu.png" alt="whatsapp" class="header-whatsapp"
+        /></a>
+
+        <div class="order-a-call">Заказать звонок</div>
+      </div>
+    </header>
+    <div class="menu">
+      <a href="#services" class="menu-item">Услуги</a>
+      <div class="dot"></div>
+      <a href="#" class="menu-item">Стоимость</a>
+      <div class="dot"></div>
+      <a href="#" class="menu-item">Портфолио</a>
+      <div class="dot"></div>
+      <a href="#contacts" class="menu-item">Контакты</a>
+    </div>
+
+    <main class="main">
+      <div class="wrap-main">
+        <img src="img/car1.png" alt="car1" class="car1" />
+        <img src="img/car2.png" alt="car2" class="car2" />
+        <div class="container-main">
+          <section class="initial-section">
+            <div class="section-text">
+              Поможем оформить изменения ТС в ГИБДД
+            </div>
+            <div class="line-1"></div>
+            <div class="line-2"></div>
+            <h1 class="initial-title section-title">
+              Регистрация переоборудований автомобилей
+              <span class="title-orange">в Вологде</span>
+            </h1>
+            <div class="request-for-help">
+              <div class="request-for-help-text">
+                Уже внесли изменения в авто и нужно срочно их зарегистрировать?
+                Мы сможем помочь!
+              </div>
+              <form action="#" class="request-for-help-form">
+                <input
+                  type="tel"
+                  name="phone"
+                  id="phone-1"
+                  class="input-phone"
+                  placeholder="+7(___)-___-__-__"
+                />
+                <script>
+                  $(function () {
+                    $("#phone-1").mask("+7(999)-999-99-99");
+                  });
+                </script>
+                <button type="submit" class="button-main">
+                  Оставить заявку
+                </button>
+              </form>
+            </div>
+          </section>
+        </div>
+        <div class="advantages">
+          <div class="advantage">
+            <div class="advantage-icon">
+              <img src="img/insurance.png" alt="insurance" class="icon-1" />
+            </div>
+            <div class="advantage-text">
+              Договор со 100% гарантией результата
+            </div>
+          </div>
+          <div class="advantage">
+            <div class="advantage-icon">
+              <img src="img/writing.png" alt="writing" class="icon-2" />
+            </div>
+            <div class="advantage-text">
+              Вносим 470+<br />видов изменений в ТС
+            </div>
+          </div>
+          <div class="advantage">
+            <div class="advantage-icon">
+              <img src="img/handshake.png" alt="handshake" class="icon-3" />
+            </div>
+            <div class="advantage-text">Регистрируем<br />«под ключ»</div>
+          </div>
+          <div class="advantage">
+            <div class="advantage-icon">
+              <img src="img/traffic.png" alt="traffic" class="icon-4" />
+            </div>
+            <div class="advantage-text">Все категории транспортных средств</div>
+          </div>
+        </div>
+      </div>
+      <div class="wrap-moreOftenRegister">
+        <div class="container-moreOftenRegister">
+          <section class="section-moreOftenRegister" id="services">
+            <h1 class="title-moreOftenRegister section-title">
+              <span class="title-blue">Чаще всего</span> регистрируют изменения
+            </h1>
+            <div class="swiper-object">
+              <div class="swiper-container swiper-moreOftenRegister">
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide">
+                    <div class="block-completedApplications">
+                      <span class="block-completedApplications-text"
+                        >Оформлено</span
+                      >
+                      <div class="block-completedApplications-quantity">
+                        <span class="quanity-text">17 000 раз</span>
+                      </div>
+                    </div>
+                    <div class="slide-card">
+                      <div class="slide-card-image card-image-1"></div>
+                      <div class="slide-card-text">
+                        Замена или СВАП двигателя любой мощности
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="block-completedApplications">
+                      <span class="block-completedApplications-text"
+                        >Оформлено</span
+                      >
+                      <div class="block-completedApplications-quantity">
+                        <span class="quanity-text">6 000 раз</span>
+                      </div>
+                    </div>
+                    <div class="slide-card">
+                      <div class="slide-card-image card-image-2"></div>
+                      <div class="slide-card-text">
+                        Смена категории ТС (D>B, D>C)
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="block-completedApplications">
+                      <span class="block-completedApplications-text"
+                        >Оформлено</span
+                      >
+                      <div class="block-completedApplications-quantity">
+                        <span class="quanity-text">12 000 раз</span>
+                      </div>
+                    </div>
+                    <div class="slide-card">
+                      <div class="slide-card-image card-image-3"></div>
+                      <div class="slide-card-text">
+                        Джиповый тюнинг: шноркель, фаркоп, обвесы и пр.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="block-completedApplications">
+                      <span class="block-completedApplications-text"
+                        >Оформлено</span
+                      >
+                      <div class="block-completedApplications-quantity">
+                        <span class="quanity-text">500 раз</span>
+                      </div>
+                    </div>
+                    <div class="slide-card">
+                      <div class="slide-card-image card-image-4"></div>
+                      <div class="slide-card-text">
+                        Установка КМУ (ГМУ) крана манипулятора
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="block-completedApplications">
+                      <span class="block-completedApplications-text"
+                        >Оформлено</span
+                      >
+                      <div class="block-completedApplications-quantity">
+                        <span class="quanity-text">8 000 раз</span>
+                      </div>
+                    </div>
+                    <div class="slide-card">
+                      <div class="slide-card-image card-image-5"></div>
+                      <div class="slide-card-text">
+                        Переоборудование на газ<br />(установка ГБО)
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- If we need navigation buttons -->
+              </div>
+              <div class="button-prev"></div>
+              <div class="button-next"></div>
+            </div>
+          </section>
+        </div>
+      </div>
+      <div class="wrap-amountOfExperience">
+        <div class="text-with-arrow">
+          Узаконим даже самые<br />сложные изменения
+        </div>
+        <div class="container-amountOfExperience">
+          <section class="section-amountOfExperience">
+            <h1 class="amountOfExperience-title">
+              Оформили уже<br /><span class="title-blue"
+                >более 5000 изменений</span
+              >
+            </h1>
+            <div class="amountOfExperience-line"></div>
+            <p class="amountOfExperience-text">
+              Мы предоставляем полный комплекс услуг по регистрации изменений в
+              конструкции ТС:
+              <b>оформляем документы, сопровождаем вас в ГИБДД</b> или делаем
+              все за вас <b>"под ключ"</b>. Благодаря собственной лаборатории и
+              государственной аккредитации мы можем узаконить даже
+              <b>самые сложные изменения</b>. У нас есть все
+              <b>необходимые шаблоны и государственные бланки</b> для получения
+              отметки о переоборудовании в ПТС.
+            </p>
+          </section>
+        </div>
+        <div class="block-freeExamination">
+          <h1 class="block-freeExamination-title">
+            Оставляйте заявку, чтобы провести
+            <span class="title-blue"
+              >бесплатную<br />
+              техническую экспертизу
+            </span>
+            и узнать:
+          </h1>
+          <div class="blocks-freeExamination-row">
+            <div class="block-technicalSpecialist">
+              <div class="foto-technicalSpecialist"></div>
+              <div class="text-technicalSpecialist">
+                Технический специалист<br />по оформлению переоборудования
+              </div>
+              <div class="name-technicalSpecialist">Алексей Воронин</div>
+            </div>
+
+            <ul class="block-freeExamination-list">
+              <li>Стоимость оформления документов</li>
+              <li>Точные сроки регистрации</li>
+              <li>Этапы и нюансы взаимодействия с ГИБДД</li>
+              <li>Особенности регистрации этого вида изменения в Вологде</li>
+            </ul>
+            <div class="block-freeExamination-form">
+              <form action="#">
+                <input
+                  type="tel"
+                  name="phone"
+                  id="phone-2"
+                  class="input-phone-freeExamination"
+                  placeholder="Телефон"
+                />
+                <script>
+                  $(function () {
+                    $("#phone-2").mask("+7(999)-999-99-99");
+                  });
+                </script>
+                <textarea
+                  class="input-text-freeExamination"
+                  placeholder="Опишите изменения, которые вы хотите зарегистрировать,
+марку и модель автомобиля"
+                ></textarea>
+                <button type="submit" class="button-freeExamination">
+                  Узнать стоимость
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="wrap-examinationAndDocuments">
+        <div class="container-examinationAndDocuments">
+          <section class="section-examinationAndDocuments">
+            <h1 class="examinationAndDocuments-title">
+              <span class="title-blue">Оформляем</span> все необходимые
+              документы<br />или регистрируем «под ключ»
+            </h1>
+            <div class="block-documents">
+              <div class="document">
+                <div class="document-image">
+                  <a data-fancybox="gallery" href="img/document1.jpeg"
+                    ><img src="img/document1.jpeg" alt="document1" />
+                    <div class="magnifier"></div>
+                  </a>
+                </div>
+                <div class="document-name">
+                  Заключение предварительной<br />тех. экспертизы
+                </div>
+              </div>
+              <div class="document">
+                <div class="document-image">
+                  <a data-fancybox="gallery" href="img/document2.png"
+                    ><img src="img/document2.png" alt="document2" />
+                    <div class="magnifier"></div
+                  ></a>
+                </div>
+                <div class="document-name">
+                  Заявление- декларацию с перечнем вномимых изменений
+                </div>
+              </div>
+              <div class="document">
+                <div class="document-image">
+                  <a data-fancybox="gallery" href="img/document3.png"
+                    ><img src="img/document3.png" alt="document3" />
+                    <div class="magnifier"></div
+                  ></a>
+                </div>
+                <div class="document-name">
+                  Сертификаты СТО на оборудование и работы
+                </div>
+              </div>
+              <div class="document">
+                <div class="document-image">
+                  <a data-fancybox="gallery" href="img/document4.png"
+                    ><img src="img/document4.png" alt="document4" />
+                    <div class="magnifier"></div
+                  ></a>
+                </div>
+                <div class="document-name">
+                  Договор на проведенные работы СТО
+                </div>
+              </div>
+              <div class="document">
+                <div class="document-image">
+                  <a data-fancybox="gallery" href="img/document5.png"
+                    ><img src="img/document5.png" alt="document5" />
+                    <div class="magnifier"></div
+                  ></a>
+                </div>
+                <div class="document-name">
+                  Протокол проверки безопасности ТС с внесенными изменениями
+                </div>
+              </div>
+              <div class="document">
+                <div class="document-image">
+                  <a data-fancybox="gallery" href="img/document6.png"
+                    ><img src="img/document6.png" alt="document6" />
+                    <div class="magnifier"></div
+                  ></a>
+                </div>
+                <div class="document-name">
+                  Заявление на выдачу СКТС в ГИБДД
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+      <div class="wrap-applicationCounter">
+        <div class="container-applicationCounter">
+          <div class="block-counter">
+            <img
+              src="img/lightning.png"
+              alt="lightning"
+              class="block-counter-lightning"
+            />
+            <div class="block-counter-title">
+              Получи заявление<br />бесплатно прямо сейчас!
+            </div>
+            <div class="counter">
+              <div class="counter-bacground-block">
+                <div class="counter-cell">0</div>
+                <div class="counter-cell">0</div>
+                <div class="counter-cell">0</div>
+                <div class="counter-cell">
+                  <div
+                    class="counter-list wow animate__animated animate__fadeInDown"
+                  >
+                    <div class="counter-cell">4</div>
+                    <div class="counter-cell">5</div>
+                    <div class="counter-cell">4</div>
+                    <div class="counter-cell">3</div>
+                    <div class="counter-cell">2</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="block-counter-text">
+              Осталось<br />бесплатных заявлений
+            </div>
+          </div>
+          <form action="#" class="applicationCounter-form">
+            <div class="applicationCounter-form-title">
+              Ежедневно оформляем
+              <div class="five">5</div>
+              заявлений о переоборудовании<br />в ГИБДД совершенно БЕСПЛАТНО,
+              успевай оставить заявку!
+            </div>
+            <input
+              type="tel"
+              id="phone-3"
+              class="input-phone applicationCounter-form-phone"
+              placeholder="+7(___)-___-__-__"
+            />
+            <script>
+              $(function () {
+                $("#phone-3").mask("+7(999)-999-99-99");
+              });
+            </script>
+            <button
+              type="submit"
+              class="button-main applicationCounter-form-button"
+            >
+              Оставить заявку
+            </button>
+          </form>
+        </div>
+        <div class="wrap-applicationCounter-image"></div>
+      </div>
+      <div class="wrap-map" id="contacts">
+        <div class="block-contacts">
+          <h1 class="contacts-title">
+            Наши <span class="title-blue">контакты</span>
+          </h1>
+          <a href="tel:+8172222222" class="contacts-number">
+            8 (8172) 22-22-22</a
+          >
+          <a href="mailto:service@yandex.ru" class="contacts-email"
+            >service@yandex.ru</a
+          >
+          <div class="contacts-address">
+            г. Вологда, ул. Зосимовская 9, офис 3<br />6 этаж
+          </div>
+          <div class="contacts-links">
+            <a href="http://vk.com" class="link-vk"
+              ><img src="img/vk.png" alt="vk"
+            /></a>
+            <a href="http://instagram.com" class="link-inst"
+              ><img src="img/instagram.png" alt=""
+            /></a>
+          </div>
+          <a href="https://wa.me/+79215380784" class="link-button-whatsapp"
+            ><div class="button-whatsapp">Консультация в WhatsApp</div></a
+          >
+        </div>
+        <script
+          type="text/javascript"
+          charset="utf-8"
+          async
+          src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A49f99fb0c76c9a24d77c7c3499afe27e6d3cf3eb2d4590cb8390f15b259ffc2a&amp;width=100%25&amp;height=660&amp;lang=ru_RU&amp;scroll=false"
+        ></script>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="description">Франшиза по переоборудованию</div>
+
+        <a href="https://www.grampus-studio.ru" class="developer">
+          <div class="developer-text">Разработка сайта</div>
+          <div class="developer-logo">
+            <img src="img/logoG.png" alt="G" />
+            <span class="rampus">rampus</span>
+          </div>
+        </a>
+        <div class="organization">
+          <div class="organization-name">© 2020, Лаборатория «Тест-Драйв»</div>
+          <a href="#" class="privacyPolicy">Политика конфиденциальности</a>
+        </div>
+      </div>
+    </footer>
+    <div class="modal" id="modal-1">
+      <div class="modal-dialog">
+        <div class="modal-header">
+          <button class="close" id="close-1">&times;</button>
+          <div class="modal-title">Выберите город</div>
+        </div>
+        <div class="modal-body">
+          <a href="#" class="city-name">Москва и Подмосковье</a>
+          <a href="#" class="city-name"
+            >Санкт-Петербург и Ленинградская область</a
+          >
+          <a href="#" class="city-name">Вологда</a>
+          <a href="#" class="city-name">Казань</a>
+          <a href="#" class="city-name">Омск</a>
+          <a href="#" class="city-name">Рязань</a>
+          <a href="#" class="city-name">Сочи</a>
+          <a href="#" class="city-name">Ярославль</a>
+        </div>
+      </div>
+    </div>
+    <div class="modal" id="modal-2">
+      <div class="modal-call-dialog">
+        <div class="modal-header">
+          <button class="close" id="close-2">&times;</button>
+          <div class="modal-title modal-title-call">Заказать звонок</div>
+        </div>
+        <div class="modal-call-body">
+          <form action="#" class="modal-call-form">
+            <input
+              type="text"
+              id="modal-call-name"
+              class="modal-call-name"
+              placeholder="Ваше имя"
+            />
+            <input
+              type="tel"
+              id="modal-call-phone"
+              class="modal-call-phone"
+              placeholder="+7(___)-___-__-__"
+            />
+            <script>
+              $(function () {
+                $("#modal-call-phone").mask("+7(999)-999-99-99");
+              });
+            </script>
+            <button type="submit" class="modal-call-button">
+              Заказать звонок
+            </button>
+          </form>
+          <div class="user-agreement">
+            <img src="img/RadioOff.png" alt="Off" class="radio-button" />
+            <div class="user-agreement-text">
+              Я ознакомлен и принимаю условия пользовательского соглашения и
+              согласен <br /><a href="#"
+                >с условиями обработки персональных данных</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/disabledScroll.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/slider.js" type="module"></script>
+  </body>
+</html>
